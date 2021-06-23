@@ -32,7 +32,6 @@ while capture.isOpened():
             # draw red reactangle around face
             cv2.rectangle(img,(x,y),(x+w, y+h), (0,0,255),3)
             cv2.putText(img,'No Mask', (x+w-160, y+h-170),cv2.FONT_HERSHEY_SIMPLEX, 1,(0,0,255),2)
-            #playsound('beep-01a.wav')
         # else write mask
         else:
             # draw green reactangle around face
